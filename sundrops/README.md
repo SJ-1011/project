@@ -17,8 +17,9 @@
 - 게임 시작을 클릭하면 게임이 실행이 되며, 게임 방법을 클릭하면 게임 방법이 나오고, 게임 종료를 클릭하면 게임이 종료됩니다.
 
 
+![캡처](https://user-images.githubusercontent.com/109647265/205752346-09542d9c-af02-4f6d-a910-734a41437e4e.PNG)
 
-![게임방법](https://user-images.githubusercontent.com/109647265/205740368-da5fd51f-8d1c-40fa-b662-7b88ecc8b8d4.PNG)
+
 
 - 게임 방법 버튼을 클릭한 화면입니다.
 - 게임 방법에 대한 자세한 정보가 나와있습니다.
