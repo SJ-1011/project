@@ -11,3 +11,4 @@
 
 # 1) 초기 화면(메인 메뉴)
 
+![메인메뉴](https://user-images.githubusercontent.com/109647265/205739860-ea1c01bb-c9f3-4813-834c-870dc96e16cb.PNG)
