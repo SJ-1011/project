@@ -32,6 +32,7 @@
 ![게임실행1](https://user-images.githubusercontent.com/109647265/205741399-fc1892a3-cc86-4fad-904c-2ddc37bf2a6b.PNG)
 
 - 게임을 처음 실행한 화면입니다.
+- 방향키 ←, →로 달맞이꽃 객체를 움직일 수 있습니다.
 
 
 
