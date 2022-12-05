@@ -66,3 +66,17 @@
 
 # **2. 게임 실행 영상**
 
+**게임 내의 bgm이 나옵니다.**
+용량때문에 3개의 영상으로 나눠서 올립니다.
+
+
+https://user-images.githubusercontent.com/109647265/205758598-45a248a3-151e-4f09-b4af-7c62848590ca.mp4
+
+
+
+https://user-images.githubusercontent.com/109647265/205758692-c775a748-2f80-4eb6-ba31-230828c3a59f.mp4
+
+
+
+https://user-images.githubusercontent.com/109647265/205758719-2808b17c-b80a-4088-b9f0-55de99d03e37.mp4
+
