@@ -4,6 +4,8 @@ from pygame.locals import KEYDOWN, K_LEFT, K_RIGHT
 pygame.init()
 display_surface = pygame.display.set_mode((1000, 700))
 pygame.display.set_caption("My project")
+background_sound = pygame.mixer.Sound('sound/background.mp3')
+grow_sound = pygame.mixer.Sound('sound/grow.mp3')
 
 
 
@@ -38,7 +40,7 @@ class fall(pygame.sprite.Sprite):
 class point(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.Surface([1,1], pygame.SRCALPHA, 32) # 1x1 px짜리 투명 이미지 생성
+        self.image = pygame.Surface([1,1], pygame.SRCALPHA, 32)
         self.rect = self.image.get_rect()
     def update(self):
         self.rect.x = pygame.mouse.get_pos()[0]
@@ -71,7 +73,9 @@ def change_background(num = 0):
     if num == 5:
         return pygame.image.load('image/game_rule.png')
     
-        
+def play_sound(num):
+    if num == 0:
+        background_sound.play()
                     
 def main():
     # 달맞이꽃 객체 생성
@@ -95,6 +99,7 @@ def main():
     sysfont = pygame.font.SysFont(None, 50, True)
     life_num = 5
     score_num = 0
+    a = 0
     
     background_num = 4
     
@@ -133,6 +138,8 @@ def main():
             pygame.display.update()
         
         else:
+            play_sound(a)
+            a = 1
             
             display_surface.blit(change_background(background_num), (0, 0))
             
@@ -187,6 +194,7 @@ def main():
             
             # 새싹으로 성장, 이 밑으로 score 범위 5<_<10 이런식으로 바꾸기
             if (score_num >= 3 and score_num < 10) and k != 11:
+                grow_sound.play()
                 sundrops_image, sundrops_rect, k = change_sundrops_image(1)
                 sundrops_rect.centerx = 500
                 sundrops_rect.bottom = 680
@@ -194,6 +202,7 @@ def main():
             
             # 큰 줄기로 성장
             if (score_num >= 10 and score_num < 20) and k != 12:
+                grow_sound.play()
                 sundrops_image, sundrops_rect, k = change_sundrops_image(2)
                 sundrops_rect.centerx = 500
                 sundrops_rect.bottom = 680
@@ -201,6 +210,7 @@ def main():
             
             # 꽃 피우기
             if (score_num >= 20) and k != 13:
+                grow_sound.play()
                 sundrops_image, sundrops_rect, k = change_sundrops_image(3)
                 sundrops_rect.centerx = 500
                 sundrops_rect.bottom = 680
