@@ -80,3 +80,8 @@ https://user-images.githubusercontent.com/109647265/205758692-c775a748-2f80-4eb6
 
 https://user-images.githubusercontent.com/109647265/205758719-2808b17c-b80a-4088-b9f0-55de99d03e37.mp4
 
+
+
+# 3. 사용 자료
+
+- bgm 및 효과음 - baba is you
