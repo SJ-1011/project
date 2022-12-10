@@ -76,6 +76,13 @@ def change_background(num = 0):
 def play_sound(num):
     if num == 0:
         background_sound.play()
+        
+def final(num):
+    if num == 0:
+        display_surface.blit(pygame.image.load('image/over.png'), (0, 0))
+        
+    if num == 1:
+        display_surface.blit(pygame.image.load('image/win.png'), (0, 0))
                     
 def main():
     # 달맞이꽃 객체 생성
@@ -246,10 +253,14 @@ def main():
             display_surface.blit(score, score_rect)
             
             if life_num <= 0:
-                display_surface.blit(pygame.image.load('image/over.png'), (0, 0))
+                final(0)
+                sundrops_rect.centerx = 5000
+                sundrops_rect.bottom = 5000
             
             if score_num >= 30:
-                display_surface.blit(pygame.image.load('image/win.png'), (0, 0))
+                final(1)
+                sundrops_rect.centerx = 5000
+                sundrops_rect.bottom = 5000
             
             
             FPSCLOCK.tick(50)
@@ -259,4 +270,3 @@ def main():
 
 if __name__ == '__main__':  
     main()
-    
